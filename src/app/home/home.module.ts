@@ -5,14 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import { FooterComponent } from '../layouts/footer/footer.component';
-import { HeaderComponent } from '../layouts/header/header.component';
+import { LayoutsModule } from '../layouts/layouts.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    LayoutsModule,
     RouterModule.forChild([
       {
         path: '',
@@ -20,6 +20,6 @@ import { HeaderComponent } from '../layouts/header/header.component';
       }
     ])
   ],
-  declarations: [FooterComponent, HomePage, HeaderComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule {}
