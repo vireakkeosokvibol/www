@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { } from 'src/config.json';
+import { APP_URL } from 'src/config.json';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +7,9 @@ import { } from 'src/config.json';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  APPURL: string = APP_URL;
 
-  private APPURL: string = '';
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
-
 }
